@@ -1,0 +1,441 @@
+/* ============ GENERAL ============ */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Patrick Hand', 'Comic Sans MS', Arial, sans-serif;
+  font-size: 18px;
+  background-color: #0a0a0a;
+  color: #f4f2ee;
+  margin: 0;
+}
+a {
+  color: #ff4d5a;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1, h2, h3 {
+  color: white;
+  margin: 0 0 10px;
+}
+p {
+  line-height: 1.6;
+}
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+section {
+  padding: 30px 0 10px;
+  scroll-margin-top: 80px;
+}
+
+/* ============ CABECERA Y MENÚ ============ */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: #18181c;
+  border-bottom: 2px solid #e02424;
+  padding: 10px 25px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+.logo:hover {
+  text-decoration: none;
+}
+.logo img {
+  height: 38px;
+}
+.logo b {
+  color: #e02424;
+}
+nav a {
+  display: inline-block;
+  color: #9a9aa3;
+  padding: 6px 16px;
+  border-radius: 8px;
+}
+nav a:hover {
+  background-color: #e02424;
+  color: white;
+  text-decoration: none;
+}
+
+/* ============ INICIO ============ */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  background: linear-gradient(120deg, #000000 10%, #7a0f0f 60%, #e02424);
+  border-radius: 18px;
+  padding: 50px 40px;
+  margin-bottom: 30px;
+}
+.logo-grande {
+  width: 130px;
+}
+.hero h1 {
+  font-size: 56px;
+  letter-spacing: 4px;
+}
+.hero p {
+  max-width: 480px;
+  font-size: 22px;
+}
+.boton {
+  display: inline-block;
+  background-color: #e02424;
+  color: white;
+  border: 2px solid #e02424;
+  border-radius: 8px;
+  padding: 10px 22px;
+  margin: 5px 8px 5px 0;
+  font-family: inherit;
+  font-size: 18px;
+  cursor: pointer;
+}
+.boton:hover {
+  background-color: #ff1e3c;
+  border-color: #ff1e3c;
+  text-decoration: none;
+}
+.boton-borde {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+.resumen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.resumen article {
+  flex: 1;
+  min-width: 220px;
+  background-color: #18181c;
+  border: 2px solid #34343c;
+  border-radius: 12px;
+  padding: 20px;
+}
+.resumen article:hover {
+  border-color: #e02424;
+}
+
+/* ============ TÍTULOS DE SECCIÓN ============ */
+section > h2 {
+  font-size: 34px;
+  padding-left: 15px;
+  border-left: 8px solid #e02424;
+}
+.volver {
+  text-align: right;
+}
+.detalle {
+  color: #9a9aa3;
+  margin: 0 0 12px;
+}
+
+/* ============ MÚSICA ============ */
+.lista-musica {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.cancion {
+  background-color: #18181c;
+  border: 2px solid #34343c;
+  border-radius: 12px;
+  padding: 15px;
+}
+.cancion:hover {
+  border-color: #e02424;
+}
+.cancion img {
+  display: block;
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  background-color: #111111;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.cancion h3 {
+  font-size: 22px;
+}
+audio {
+  width: 100%;
+}
+
+/* ============ PELÍCULAS ============ */
+.pelicula {
+  background-color: #18181c;
+  border: 2px solid #34343c;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+.pelicula:hover {
+  border-color: #e02424;
+}
+.fila {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.pelicula img {
+  width: 320px;
+  max-width: 100%;
+  height: 190px;
+  object-fit: cover;
+  background-color: #111111;
+  border-radius: 10px;
+}
+.info {
+  flex: 1;
+  min-width: 250px;
+}
+.info h3 {
+  font-size: 28px;
+  color: #ff4d5a;
+}
+video {
+  display: block;
+  width: 100%;
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+/* ============ ANIME: BOTONES REDONDOS Y CAPÍTULOS ============ */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+}
+.chip {
+  color: #f4f2ee;
+  border: 2px solid #34343c;
+  border-radius: 20px;
+  padding: 5px 16px;
+}
+.chip:hover {
+  background-color: #e02424;
+  border-color: #e02424;
+  text-decoration: none;
+}
+.capitulo {
+  background-color: #18181c;
+  border: 2px solid #34343c;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 20px;
+  scroll-margin-top: 80px;
+}
+.capitulo:hover {
+  border-color: #e02424;
+}
+.capitulo h3 {
+  font-size: 24px;
+  color: #ff4d5a;
+}
+
+/* ============ REPRODUCTOR DE MÚSICA (barra de abajo) ============ */
+#reproductor {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  background-color: #18181c;
+  border-top: 2px solid #e02424;
+  padding: 10px 20px;
+}
+#reproductor.activo {
+  display: flex;
+}
+body.con-reproductor {
+  padding-bottom: 90px;
+}
+#rp-portada {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.rp-datos {
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+}
+.rp-datos small {
+  color: #9a9aa3;
+}
+#reproductor button {
+  background: none;
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-size: 26px;
+  cursor: pointer;
+}
+#reproductor button:hover,
+#reproductor button.on {
+  color: #e02424;
+}
+.rp-botones {
+  display: flex;
+  gap: 10px;
+}
+#rp-barra {
+  flex: 1;
+  min-width: 120px;
+  height: 8px;
+  background-color: #34343c;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#rp-progreso {
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: #e02424;
+}
+#rp-tiempo {
+  color: #9a9aa3;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+/* ============ LISTA DE EPISODIOS (anime y serie) ============ */
+.episodio {
+  background-color: #18181c;
+  border: 2px solid #34343c;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  scroll-margin-top: 80px;
+}
+.episodio:hover,
+.episodio[open] {
+  border-color: #e02424;
+}
+.episodio summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  font-size: 22px;
+  cursor: pointer;
+  list-style: none;
+}
+.episodio summary::-webkit-details-marker {
+  display: none;
+}
+.episodio summary::after {
+  content: "▶";
+  font-size: 18px;
+}
+.episodio[open] summary::after {
+  content: "▼";
+  color: #e02424;
+}
+.episodio video {
+  width: calc(100% - 40px);
+  margin: 0 20px 20px;
+}
+
+/* ============ FORMULARIO ============ */
+form {
+  max-width: 650px;
+}
+fieldset {
+  border: 2px solid #e02424;
+  border-radius: 12px;
+  padding: 10px 25px 20px;
+  margin: 0 0 22px;
+}
+legend {
+  color: #ff4d5a;
+  font-size: 24px;
+  padding: 0 10px;
+}
+label {
+  display: block;
+  margin-top: 14px;
+}
+input[type="text"], input[type="email"], input[type="password"],
+input[type="date"], select, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #0a0a0a;
+  color: white;
+  border: 2px solid #34343c;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-top: 5px;
+  font-family: inherit;
+  font-size: 17px;
+  color-scheme: dark;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #e02424;
+}
+.opcion {
+  display: inline-block;
+  margin: 8px 20px 0 0;
+}
+input[type="radio"], input[type="checkbox"] {
+  accent-color: #e02424;
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+}
+
+/* ============ PIE DE PÁGINA ============ */
+footer {
+  text-align: center;
+  color: #9a9aa3;
+  border-top: 2px solid #34343c;
+  margin-top: 40px;
+  padding: 25px 20px;
+}
+
+/* ============ CELULAR ============ */
+@media (max-width: 700px) {
+  header {
+    justify-content: center;
+  }
+  .hero {
+    padding: 30px 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  .hero h1 {
+    font-size: 42px;
+  }
+  .logo-grande {
+    width: 90px;
+  }
+}
+/* Josue Ezequiel Moreira Lopez */
